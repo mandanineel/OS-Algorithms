@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="icon" href="/images/icon.png">
+
+    <script src="cscan.js"></script>
+    <title>C-SCAN</title>
+    <link rel="stylesheet" href="CSCAN.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">Virtual Lab</a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="simulator.html">Simulator</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </section>
+
+    <div class="Name">
+        <h7>
+          C-SCAN Simulation
+        </h7>
+    </div>
+
+    <div class="steps">
+        <h9>--> Refer The Give Steps For Perfom The Algorithm</h9><br><br>
+  
+        <h8>Step:1</h8>
+        <p class="step">Add appropriate sequence to the given field</p><br>
+        <h8>Step:2</h8>
+        <p class="step">Add initial head position to the given box</p><br>
+        <h8>Step:3</h8>
+        <p class="step">If you want left direction,then select left otherwise select right</p><br>
+        <h8>Step:4</h8>
+        <p class="step">Click on RUN SCAN button for run the process</p><br>
+        
+    </div>
+
+    <div class="first">
+
+
+        <div class="algo">
+            <div class="visualizer tm-timeline-item">
+                <div class="tm-timeline-item-inner">
+
+                    <div class="new tm-timeline-description-wrap">
+                        <div class="tm-bg-dark tm-timeline-description">
+
+
+                            <div class="">
+                                <div class="form-container-res" id="ifManualInput" style="display:block">
+                                    <label class="col-form-label">Enter the request sequence:</label>
+                                    <input id="Sequence" class="form-control" oninput="resetCScanResult()" placeholder="Eg: 10, 25, 40  (Maximum input value = 199)" />
+                                    <p></p>
+                                    <label class="col-form-label">Enter the initial head position:</label>
+                                    <input id="Head" class="form-control" oninput="resetCScanResult()" placeholder="Eg: 20 (Maximum input value = 199)" />
+                                    <p></p>
+                                    <lable>Direction: </lable>
+                                    <p></p>
+
+                                    <select class="btn btn-outline-primary btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;  text-align: left;" id="Direction">
+                    <option style="background-color: white; color: black;">Left</option>
+                    <option style="background-color: white; color: black">Right</option>
+
+                  </select>
+                                    <p></p>
+                                    <div class="center-run">
+                                        <button class="btn btn-outline-primary btn-outline-dark" onclick="cscan_click()" id="CSCAN">Run
+                      CSCAN</button>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newc tm-bg-dark-light tm-timeline-description">
+                <h3 class="tm-text-orange tm-font-400">
+
+                    Output of the algorithm:
+
+                </h3>
+
+                <div class="cscan-output-man" id="ifManualOutput" style="display:block">
+                    <label>Total seek time is:&nbsp;</label><span style="font-weight: bolder; color: #000000" id="cscan_totalSeekCount"></span>
+                    <p></p>
+                    <label>Sequence of execution:&nbsp;</label><span style="font-weight: bolder; color: #000000" id="cscan_finalOrder"></span>
+                    <p></p>
+                    <label>Average seek time:&nbsp;</label>
+                    <span style="font-weight: bolder; color: #000000" id="cscan_averageSeekCount"></span>
+                    <p></p>
+                    <p></p>
+                    <div id="chartContainer" style="display: block"></div>
+                    <div id="betweenButton">
+
+                    </div>
+                </div>
+
+                <div class="tm-timeline-connector-vertical"></div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 20) {
+                nav.classList.add('navbar-scrolled', 'shadow');
+            } else {
+                nav.classList.remove('navbar-scrolled', 'shadow');
+            }
+        });
+    </script>
+
+<section class="footer">
+    <p style="color: #fff;">All Rights are reserved | 2023</p>
+    <p style="color: #fff;">G6 | Team-6</p>       
+</section>
+
+</body>
+
+</html>

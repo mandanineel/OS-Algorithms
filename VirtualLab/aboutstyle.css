@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    height: 5rem;
+    width:100%;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+    background-size:cover;
+    background-position: center;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+    align-items: center;
+}
+
+nav .fas{
+    display:none;
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+
+nav a {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navStyle .nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover ::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+.about{
+    width:80%;
+    
+
+    margin:auto;
+    padding-top:10px;
+    text-align:center;
+}
+
+.team{
+    display: flex;
+    margin-top:0%;
+    justify-content: space-between;
+}
+.team1{
+    display: flex;
+    margin-top: 0%;
+    justify-content: space-between;
+}
+
+.team-member{
+    flex-basis: 31%;
+    background: #a3e5f6;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 7% 2%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.team-member1{
+    flex-basis: 31%;
+    background: #a3e5f6;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 7% 2%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.team-member:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+.team-member1:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+
+h5{
+    font-size:36px;
+    text-align:center;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+@media only screen and (max-width:730px){
+    .team{
+        flex-direction: column;
+    }
+    .team1{
+        flex-direction: column;
+    }
+}
+.footer{
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}

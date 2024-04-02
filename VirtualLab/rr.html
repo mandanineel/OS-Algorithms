@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Robin</title>
+    <link rel="stylesheet" href="rr.css">
+    
+</head>
+<body>
+   
+    <section class="header">
+        <nav>
+            <a href="index.html">Virtual Lab</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="simulator.html">Simulator</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </section>
+    
+
+    <div class="Name">
+      <h7>
+        Round Robin Algorithm
+      </h7>
+    </div>
+
+    <div class="steps">
+      <h9>--> Refer The Give Steps For Perfom The Algorithm</h9><br><br>
+
+      <h8>Step:1</h8>
+      <p class="step">Add appropriate time to Time Bound section</p><br>
+      <h8>Step:2</h8>
+      <p class="step">Add arival time and burst time of the process</p><br>
+      <h8>Step:3</h8>
+      <p class="step">After performing Step:2 click on ADD button</p><br>
+      <h8>Step:4</h8>
+      <p class="step">Repeat Step:2 and Step:3 for all the process you have</p><br>
+      <h8>Step:5</h8>
+      <p class="step">Click on RUN button for run the process</p><br>
+      <h8>Step:6</h8>
+      <p class="step">If you want to reset Click on RESET button for reset the values</p>
+      
+    </div>
+
+    <div class="visualizer">
+
+      <div class="error" >Invalid Input</div>
+      <div class="container">
+        <div>
+            <div class="buttons">
+              <div class="play">PLAY</div>
+              <div class="reset">RESET</div>
+            </div>
+            
+            <div class="time-q">
+            Time Quantum: <input type="text" id="time-q" />
+            </div>
+            
+            <div class="avg-tat">Average TAT : <span>0</span></div>
+            
+            <div class="avg-wt">Average WT : <span>0</span></div>
+            
+            <div class="avg-rt">Average RT : <span>0</span></div>
+        </div>
+        
+        <div>
+          <div class="add-process">
+            <div class="input">
+              <div class="arrival">
+                <label for="arrival-time"> Arrival Time :</label>
+                <input type="text" id="arrival-time" />
+              </div>
+
+              <div class="burst">
+                <label for="burst-time">Burst Time :</label>
+                <input type="text" id="brust-time" />
+              </div>
+            </div>
+            <div class="add">ADD</div>
+          </div>
+
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>PID</th>
+                  <th>AT</th>
+                  <th>BT</th>
+                  <th>ST</th>
+                  <th>CT</th>
+                  <th>RT</th>
+                  <th>WT</th>
+                  <th>TAT</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="chart">
+    <table id="am">
+      <tr id="row1"></tr>
+      <tr id="row2"></tr>
+    </table>
+  </div>
+  
+  <section class="footer">
+    <p style="color: #fff;">All Rights are reserved | 2023</p>
+    <p style="color: #fff;">G6 | Team-6</p>       
+</section>
+  
+ <script src="rr.js"></script>
+</body>
+</html>

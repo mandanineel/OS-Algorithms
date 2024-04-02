@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link rel="stylesheet" href="bankersstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">Virtual Lab</a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="simulator.html">Simulator</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="Name">
+        <h7>
+            Banker's Algorithm
+        </h7>
+    </div>
+
+    <div class="steps">
+        <h9>--> Refer The Give Steps For Perfom The Algorithm</h9><br><br>
+
+        <h8>Step:1</h8>
+        <p class="step">First of all,Add processes that you reqired clicking on ADD button
+        </p><br>
+        <h8>Step:2</h8>
+        <p class="step">Add appropriate data in Allocation section,Maximum section and Available section
+        </p><br>
+        <h8>Step:3</h8>
+        <p class="step">Repeat Step:2 for all the processes</p><br>
+        <h8>Step:4</h8>
+        <p class="step">After adding data click on RUN button</p><br>
+        <h8>Step:5</h8>
+        <p class="step">Here the sequence is generated or DEADLOCK happens</p><br>
+
+
+    </div>
+
+    <div class="Lab">
+        <table class="container">
+            <tr>
+                <th style="background: none;"></th>
+                <th colspan="3" style="background: none;">Allocation</th>
+                <th colspan="3" style="background: none;">Maximum</th>
+                <th colspan="3" style="background: none;">Available</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="mainTable" style="color: #fff;">
+        <table class="container" id="myTable" style="font-size: 0.8em">
+
+            <tr>
+                <th>No.</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <div class="controlPanel">
+        <button onclick="removeRow()"><b>Delete</b></button>
+        <button onclick="submitValue()"><b>Run</b></button>
+        <button onclick="addRow()"><b>Add</b></button>
+    </div>
+
+    <div id="printProcess"></div>
+
+    <section class="footer">
+        <p style="color: #fff;">All Rights are reserved | 2023</p>
+        <p style="color: #fff;">G6 | Team-6</p>
+    </section>
+
+    <script src="Bankers.js"></script>
+</body>
+
+</html>

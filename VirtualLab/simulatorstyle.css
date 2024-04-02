@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 5rem;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+    align-items: center;
+}
+
+nav .fas {
+    display: none;
+}
+
+
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav a {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navStyle .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-links ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover ::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+.Algos {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.Algo1 {
+    display: flex;
+    margin-top: 0%;
+    justify-content: space-evenly;
+}
+
+.Algo2 {
+    display: flex;
+    margin-top: 0%;
+    justify-content: space-evenly;
+}
+
+.AlgoA {
+    flex-basis: 31%;
+    background: #ffcced;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 7% 1%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.AlgoB {
+    flex-basis: 31%;
+    background: #ffcced;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 7% 1%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.AlgoA:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.AlgoB:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width:730px) {
+    .Algo1 {
+        flex-direction: column;
+    }
+
+    .Algo2 {
+        flex-direction: column;
+    }
+}
+
+.H-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 13px;
+    position: relative;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 18px 8px 3px 8px;
+    background: transparent;
+    border-radius: 12px;
+}
+
+.H-btn:hover {
+    border: 1px solid #a18ec0;
+    background: #a18ec0;
+    transition: 0.7s;
+}
+.footer{
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}

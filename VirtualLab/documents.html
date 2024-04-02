@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link rel="stylesheet" href="documentstyle.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">Virtual Lab</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="simulator.html">Simulator</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+            </div>
+            
+        </nav>
+
+    </section>
+
+    <section class="rr">
+        <h1>Round Robin Scheduling Algorithm</h1>
+        <p>Round Robin scheduling algorithm is one of the most popular scheduling algorithm which can actually be
+             implemented in most of the operating systems. This is the preemptive version of first come first serve scheduling.
+              The Algorithm focuses on Time Sharing. In this algorithm, every process gets executed in a cyclic way. 
+              A certain time slice is defined in the system which is called time quantum. Each process present in the ready queue 
+              is assigned the CPU for that time quantum, if the execution of the process is completed during that time then the process 
+              will terminate else the process will go back to the ready queue and waits for the next turn to complete the execution.
+        </p>
+        <h4>
+            <li>Advantages</li>
+        </h4>
+        <p>
+          1. It can be actually implementable in the system because it is not depending on the burst time.<br>
+          2. It doesn't suffer from the problem of starvation or convoy effect.<br>
+          3. All the jobs get a fare allocation of CPU.
+        </p>
+
+
+        <h4>
+            <li>Disadvantages</li>
+        </h4>
+        <p>
+          1. The higher the time quantum, the higher the response time in the system.<br>
+          2. The lower the time quantum, the higher the context switching overhead in the system.<br>
+          3. Deciding a perfect time quantum is really a very difficult task in the system.
+
+        </p>
+
+        <a href="rr.html" class="hero-btn">Get Started</a>
+    </section>
+
+    <section class="bankers">
+        <h1>Banker's Algorithm</h1>
+        <p>It is a banker algorithm used to avoid deadlock and allocate resources safely to each process in
+             the computer system. The 'S-State' examines all possible tests or activities before deciding whether the 
+             allocation should be allowed to each process. It also helps the operating system to successfully share the
+              resources between all the processes. The banker's algorithm is named because it checks whether a person should 
+              be sanctioned a loan amount or not to help the bank system safely simulate allocation resources. In this section, 
+              we will learn the Banker's Algorithm in detail. Also, we will solve problems based on
+             the Banker's Algorithm. To understand the Banker's Algorithm first we will see a real word example of it.
+        </p>
+
+        <p>
+            Suppose the number of account holders in a particular bank is 'n', and the total money in a bank is 'T'. If
+             an account holder applies for a loan; first, the bank subtracts the loan amount from full cash and then estimates 
+             the cash difference is greater than T to approve the loan amount. These steps are taken because if another person 
+             applies for a loan or withdraws some amount from the bank, it helps the bank manage and operate all things without
+              any restriction in the functionality of the banking system.
+        </p>
+
+        <p>
+            Similarly, it works in an operating system. When a new process is created in a computer system, the process must 
+            provide all types of information to the operating system like upcoming processes, requests for their resources,
+             counting them, and delays. Based on these criteria, the operating system decides which process sequence should 
+             be executed or waited so that no deadlock occurs in a system. Therefore, it is also known as deadlock avoidance
+              algorithm or deadlock detection in the operating system.
+        </p>
+        <h4>
+            <li>Advantages</li>
+        </h4>
+        <p>
+          1. It contains various resources that meet the requirements of each process.<br>
+          2. Each process should provide information to the operating system for upcoming 
+          resource requests, the number of resources, and how long the resources will be held.<br>
+          3. It helps the operating system manage and control process requests for each type of resource in the computer system.<br>
+          4. The algorithm has a Max resource attribute that represents indicates each process can hold the maximum number of resources in a system.
+        </p>
+
+
+        <h4>
+            <li>Disadvantages</li>
+        </h4>
+        <p>
+          1. It requires a fixed number of processes, and no additional processes can be started in the system while executing the process.<br>
+          2. The algorithm does no longer allows the processes to exchange its maximum needs while processing its tasks.<br>
+          3. Each process has to know and state their maximum resource requirement in advance for the system.<br>
+          4. The number of resource requests can be granted in a finite time, but the time limit for allocating the resources is one year.
+        </p>
+
+        <a href="bankers.html" class="hero-btn">Get Started</a>
+        
+    </section>
+
+    <section class="scan">
+        <h1>SCAN Disk Scheduling Algorithm</h1>
+        <p>
+            In SCAN disk scheduling algorithm, head starts from one end of the disk and moves towards the other end, servicing requests
+             in between one by one and reach the other end. Then the direction of the head is reversed and the process continues as head
+              continuously scan back and forth to access the disk. So, this algorithm works as an elevator and hence also known as the elevator
+               algorithm. As a result, the requests at the midrange are serviced more and those arriving behind the disk arm will have to wait.
+        </p>
+        <h4>
+            <li>Advantages</li>
+        </h4>
+
+        <p>
+           1. This algorithm is simple and easy to understand.<br>
+           2. SCAN algorithm have no starvation.<br>
+           3. This algorithm is better than FCFS Scheduling algorithm .
+        </p>
+
+        <h4>
+            <li>Disadvantages</li>
+        </h4>
+
+        <p>
+            1. More complex algorithm to implement.<br>
+            2. This algorithm is not fair because it cause long waiting time for the cylinders just visited by the head.<br>
+            3. It causes the head to move till the end of the disk in this way the requests arriving ahead of the arm position
+               would get immediate service but some    other requests that arrive behind the arm position will have to wait for the request to complete. 
+        </p>
+
+        <a href="SCAN.html" class="hero-btn">Get Started</a>
+    </section>
+
+    <section class="c-scan">
+        <h1>C-SCAN Disk Scheduling Algorithm</h1>
+        <p>
+            The circular SCAN (C-SCAN) scheduling algorithm is a modified version of the SCAN disk scheduling algorithm that deals with the inefficiency 
+            of the SCAN algorithm by servicing the requests more uniformly. Like SCAN (Elevator Algorithm) C-SCAN moves the head from one end servicing all
+             the requests to the other end. However, as soon as the head reaches the other end, it immediately returns to the beginning of the disk without 
+             servicing any requests on the return trip (see chart below) and starts servicing again once reaches the beginning. This is also known as the “Circular
+              Elevator Algorithm” as it essentially treats the cylinders as a circular list that wraps around from the final cylinder to the first one.
+        </p>
+        <h4>
+            <li>Advantages</li>
+        </h4>
+
+        <p>
+           1. Works well with moderate to heavy loads.<br>
+           2. It provides better response time and uniform waiting time.
+        </p>
+
+        <h4>
+            <li>Disadvantages</li>
+        </h4>
+
+        <p>
+           1. May not be fair to service requests for tracks at the extreme end.<br>
+           2. It has more seek movements as compared to the SCAN Algorithm.
+        </p>
+
+        <a href="CSCAN.html" class="hero-btn">Get Started</a>
+
+    </section>
+
+
+        <section class="mru">
+            <h1>MRU Page Replacement Algorithm</h1>
+            <p>
+                Most Recently Used (MRU) is a page replacement algorithm used in computer operating
+                 systems to manage memory. It works by evicting the most recently used page when there
+                  is a need for a new page. Here are the advantages and disadvantages of the Most Recently
+                   Used page replacement algorithm:
+            </p>
+            <h4>
+                <li>Advantages</li>
+            </h4>
+    
+            <p>
+                1. MRU is very effective when there are repeated references to a small number of pages, as it ensures
+                   that the most recently used pages are kept in memory.<br>
+                2. It is simple and easy to implement.<br>
+                3. It is useful in scenarios where the working set size of a process is small, and the locality of reference is high.
+            </p>
+    
+            <h4>
+                <li>Disadvantages</li>
+            </h4>
+    
+            <p>
+                1. MRU is not optimal for all memory access patterns, especially in cases where the locality of reference is low or when there is 
+                   a sudden change in the pattern of memory access.<br>
+                2. It may lead to thrashing, where a process spends more time swapping pages in and out of memory than executing instructions.<br>
+                3. It may not be able to exploit the full potential of a large memory system since it keeps only the most recently used pages in memory. As a result, other pages may not be used as efficiently as they could be.
+                
+            </p>
+    
+            <a href="mru.html" class="hero-btn">Get Started</a>
+
+        </section>
+    
+        <section class="footer">
+            <p style="color: #fff;">All Rights are reserved | 2023</p>
+            <p style="color: #fff;">G6 | Team-6</p>       
+        </section>
+
+    
+</body>
+</html>

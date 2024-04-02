@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>MRU</title>
+    <link rel="stylesheet" href="mru.css">
+</head>
+
+<body>
+
+
+
+
+
+    <section class="header">
+        <nav>
+            <a href="index.html">Virtual Lab</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="simulator.html">Simulator</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </section>
+
+    <div class="Name">
+        <h7>
+            Most Recently Used Algorithm
+        </h7>
+    </div>
+
+    <div class="steps">
+        <h9>--> Refer The Give Steps For Perfom The Algorithm</h9><br><br>
+
+        <h8>Step:1</h8>
+        <p class="step">Add total number of frames to the given field</p><br>
+        <h8>Step:2</h8>
+        <p class="step">Add sequence of the pages to the given box(Seperate it by using symbol ",")</p><br>
+        <h8>Step:3</h8>
+        <p class="step">Click on Submit button for run the process</p><br>
+        <h8>Step:4</h8>
+        <p class="step">Check the box given below</p><br>
+    </div>
+
+
+    <div class="sections">
+        <section class="left">
+            <div class="container">
+                <div class="wrap">
+                    <label for="frames" class="title">No. of frames:</label>
+                    <div class="wrap1">
+                        <textarea class="inpt" id="frames" placeholder="Enter sequence of pages seperated by ,"></textarea>
+                        <span class="focus"></span>
+                    </div>
+                    <br>
+
+                    <label for="istring">Sequence of Pages:</label>
+                    <div class="wrap1">
+                        <textarea class="inpt" id="istring" placeholder="Enter sequence of pages seperated by comma"></textarea>
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="sub-btn">
+                        <button class="submit btn">
+                            <span>
+                                Submit
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="right">
+            <span class="ctitle op">Output</span>
+            <div id="carousel" class="carousel" data-interval="false"></div>
+            <div class="hidden">
+                <ol class="indicators"></ol>
+                <div class="container"></div>
+            </div>
+            <div id="btn1"></div>
+        </section>
+    </div>
+
+    <section class="footer">
+        <p style="color: #fff;">All Rights are reserved | 2023</p>
+        <p style="color: #fff;">G6 | Team-6</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/scripts.js"></script>
+    <script src="mru.js"></script>
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- example-7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1-->

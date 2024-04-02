@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 5rem;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+    align-items: center;
+}
+
+nav .fas {
+    display: none;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+nav a {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navStyle .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-links ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover ::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+::selection {
+    color: #36304a;
+    background: #3134ff;
+}
+
+input {
+    font-family: popins;
+    background: #dedede;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    color: rgb(0, 0, 0);
+}
+
+.Name {
+    margin: 20px 50px 20px 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9afda2;;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+h7 {
+    font-size: 2.5rem;
+    font-family: "Georgia", Serif;
+    color: #000000;
+}
+
+.Name:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.steps {
+    margin: 20px 50px 20px 50px;
+    padding: 30px 50px;
+    background-color: #ffc0d4;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.steps:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+h9 {
+    font-size: 1.5rem;
+    font-family: "Georgia", Serif;
+    color: #000000;
+}
+
+h8 {
+    color: #000000;
+}
+
+.step {
+    color: #000000;
+}
+
+h1 {
+    margin-top: -110px;
+    margin-bottom: 66px;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1em;
+    text-align: center;
+    color: grey;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height: 1em;
+    padding-bottom: 2em;
+    color: grey;
+}
+
+h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: grey;
+    text-decoration: none;
+}
+
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: grey;
+}
+
+.container td {
+    font-weight: normal;
+    font-size: 1em;
+    width: 10%;
+    -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+    -moz-box-shadow: 0 2px 2px -2px #0e1119;
+    box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 0 0;
+}
+
+.container td,
+.container th {
+    text-align: center;
+    padding: 1%;
+}
+
+.container th {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px 15px 20px 15px;
+
+}
+
+.container td:first-child {
+    color: #000000;
+}
+
+.Lab {
+    margin: 20px 50px 0px 50px;
+}
+
+.mainTable {
+    margin: 0px 50px 20px 50px;
+}
+
+#s {
+    background-color: #dedede;
+    color: black;
+}
+button{
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    color: #000000;
+    background-color: #ff1717;
+}
+.controlPanel{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 50px 20px 50px; 
+}
+.submit{
+    margin: 20px 50px 20px 50px; 
+}
+
+#printProcess {
+    color: #0e1119;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 50px 20px 50px;
+    background-color: rgb(180, 255, 255);
+}
+#printProcess:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 800px) {
+
+    .container td:nth-child(4),
+    .container th:nth-child(4) {
+        display: none;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200&display=swap");
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer {
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
